@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.container .left {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .left .top {
+  width: 300px;
+  text-align: left;
+}
+.container .left .top h1 {
+  color: deeppink;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-bottom: 0.3rem;
+}
+.container .left .top p {
+  color: #090909;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.container .left .top p a {
+  color: deeppink;
+  font-weight: 600;
+}
+.container .left .middle .email {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+.container .left .middle .email label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.container .left .middle .email input {
+  padding: 1rem;
+  outline: 0;
+  border: 1px solid #dddddd;
+}
+.container .left .middle .email input:focus {
+  outline: 0;
+}
+.container .left .middle .email input::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+.container .left .middle .email input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+.container .left .middle .password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 300px;
+}
+.container .left .middle .password .pass-top {
+  display: flex;
+  justify-content: space-between;
+}
+.container .left .middle .password .pass-top a {
+  font-size: 1.5rem;
+  color: deeppink;
+  font-weight: 600;
+}
+.container .left .middle .password label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.container .left .middle .password input {
+  padding: 1rem;
+  outline: 0;
+  border: 1px solid #dddddd;
+  width: 278px;
+}
+.container .left .middle .password input:focus {
+  outline: 0;
+}
+.container .left .middle .password input::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+.container .left .middle .password input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+.container .left .middle .remember {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.container .left .middle .remember label {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+.container .left .middle .submit {
+  margin-bottom: 1rem;
+}
+.container .left .middle .submit input {
+  width: 300px;
+  border: 0;
+  padding: 1rem;
+  background: deeppink;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.container .left .bottom {
+  width: 300px;
+}
+.container .left .bottom .xbar {
+  color: deeppink;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.container .left .bottom .xbar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 32%;
+  background: pink;
+  height: 1px;
+}
+.container .left .bottom .xbar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 32%;
+  background: pink;
+  height: 1px;
+}
+.container .left .bottom .box {
+  display: flex;
+  justify-content: space-between;
+}
+.container .left .bottom .box button {
+  background: #fff;
+  border: 1px solid pink;
+  padding: 1rem;
+  flex-basis: 140px;
+}
+.container .left .bottom .box button i {
+  color: deeppink;
+}
+.container .left .bottom .box button:focus {
+  outline: 0;
+}
+.container .right {
+  flex-basis: 50%;
+}
+.container .right img {
+  width: 100%;
+  max-width: 450px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .container .right img {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .container .right img {
+    max-width: 150px;
+  }
+  html {
+    font-size: 6px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .container .left .bottom .box {
+    flex-direction: column;
+  }
+  .container .left .bottom .box button {
+    flex-basis: 30px;
+    margin-bottom: 1rem;
+  }
+  .container {
+    padding: 50px;
+    align-items: start;
+  }
+  .container .left .middle .password {
+    width: 163px;
+  }
+  input {
+    width: 150px !important;
+  }
+  .container .left .remember input {
+    width: 20px !important;
+  }
+  .container .left .middle .submit input {
+    width: 163px !important;
+  }
+  .container .left .bottom {
+    width: 163px !important;
+  }
+  .container .left {
+    align-items: start;
+  }
+}/*# sourceMappingURL=style.css.map */
